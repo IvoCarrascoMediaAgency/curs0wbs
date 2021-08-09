@@ -48,7 +48,7 @@
     -webkit-touch-callout: none; }
   .owl-carousel .owl-item img {
     display: block;
-    width: 100%; }
+    width: 100%;  }
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
     display: none; }
@@ -69,6 +69,12 @@
     border: none;
     padding: 0 !important;
     font: inherit; }
+#c2 .owl-prev{
+  display: none;
+}
+#c2 .owl-next{
+  display: none;
+}
   .owl-carousel.owl-loaded {
     display: grid; }
   .owl-carousel.owl-loading {
@@ -184,3 +190,9 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+
+  @media screen and (min-width: 768px){
+  .owl-carousel .owl-item img {
+    padding: 0px;    cursor: pointer; }
+  }
