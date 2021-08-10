@@ -353,6 +353,7 @@ p.envmas {
     text-align: center;
 
     font-weight: bold;
+    margin-top: 10px;
 
 }
 
@@ -448,6 +449,7 @@ p.envmas {
     line-height: 50px;
     text-decoration: none;
     padding: 0 10px;
+
 }
 
 .accesoimg a:hover {
@@ -554,6 +556,7 @@ form{
     box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
     border-radius: 10px;
     padding: 20px;
+    border: 1px solid #25D366;
  
 
 }
@@ -762,6 +765,8 @@ input{
     max-width: 500px;
     width: 100%;
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
 /* IMG WBS */
 
@@ -771,7 +776,7 @@ input{
     display: grid;
     align-content: center;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(37,211,102,.6)0%, rgba(255,255,255,0.01) 35%);
+    /* background: linear-gradient(180deg, rgba(37,211,102,.6)0%, rgba(255,255,255,0.01) 35%); */
     
 }
 
@@ -1231,15 +1236,22 @@ div#contacto3 {
 .portadafull {
     display: grid;
    
-    background: linear-gradient(0deg, rgba(37,211,102,.6)0%, rgba(255,255,255,0.01) 65%);
+    /* background: linear-gradient(0deg, rgba(37,211,102,.6)0%, rgba(255,255,255,0.01) 65%); */
 }
 .pc {
-    text-align: center;
+    
     width: 90%;
     margin: auto;
 }
+.h2wbs2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    
 
-
+}
 
 img.imgpgrid {
     height: 80px;
@@ -1282,16 +1294,168 @@ img.imgpgrid {
 a.aque2 {
     color: #25d366;
     background: white;
+    animation: leadwin 2s infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transition: .2s;
+}
+
+@keyframes leadwin{
+    0% {
+        transform: rotate(
+    0deg
+    );
+    }
+    
+    25% {
+        transform: rotate(
+    0deg
+    );
+    }
+    50% {
+        transform: rotate(
+    2deg
+    );
+    }
+    75% {
+        transform: rotate(
+    -2deg
+    );
+    }
+    100% {
+        transform: rotate(
+    0deg
+    );
+    }
 }
 
 .btn2 a {
     width: 200px;
 }
 
+/* .modalformw{
+    display: inline-block;
+    position: relative;
+} */
+
+.modalformw.active{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    left: 0;
+    /* overflow-y: scroll; */
+
+}
+
+.modalformw form{
+z-index: 1;
+
+}
 
 
+span.icon-flecha-izq.izform {
+    position: absolute;
+    font-size: 1.5em;
+    top: 10px;
+    left: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 355, .3);
+    padding: 5px;
+}
+
+.izform2{
+    position: absolute;
+    font-size: 1.5em;
+    top: 10px;
+    left: 10px;
+    color: white;
+    cursor: pointer;
+
+    background: rgba(255, 255, 355, .3);
+    padding: 5px;
+}
+
+.modalformw.active::after{
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    z-index: 0;
+}
+
+.zin{
+    z-index: -2 !important;
+}
+.wt{
+    background: white;
+    height: auto;
+}
 
 
+.owl-prev span {
+    background: rgb(0 129 148 / 72%);
+    height: 35px;
+    position: absolute;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+  
+    -webkit-box-shadow: 0 0 7px -1px rgb(0 0 0 / 15%);
+    -moz-box-shadow: 0 0 7px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 3px rgb(255 255 255 / 50%);
+
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+    left: 10px;
+    top: calc(50%) !important;
+}
+
+.owl-next span {
+    background: rgb(0 129 148 / 72%);
+    right: -1px;
+    height: 35px;
+    position: absolute;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    top: calc(35%) !important;
+    -webkit-box-shadow: 0 0 7px -1px rgb(0 0 0 / 15%);
+    -moz-box-shadow: 0 0 7px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 3px rgb(255 255 255 / 50%);
+   
+    font-size: 25px;
+    line-height: 30px;
+    color: white;
+   right: 10px;
+    top: calc(50%) !important;
+}
+
+.item img {
+    border-radius: 20px;
+    max-width: 300px;
+}
+
+.item {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.owl-carousel {
+  
+    max-width: 1024px;
+    margin: 0 auto;
+}
 
 /* funciones mobil */
 
@@ -2129,7 +2293,7 @@ p.textpv {
     position: fixed;
     margin-top: 3px;
     width: 60px;
-    z-index: 30;
+
     display: grid;
     grid-template-columns: auto;
     align-items: center;
@@ -2390,6 +2554,16 @@ sub.smallwbs {
 
 @media screen and (min-width: 768px){
 
+
+    form{
+        height: auto;
+    }
+    p.textpv{
+        max-width: 560px;
+    }
+
+  
+
     .wbsimg2 img{
     
         max-width:400px;
@@ -2495,8 +2669,8 @@ sub.smallwbs {
     }
 
     nav.navwbs {
-        display: grid;
-    grid-template-columns: 250px auto auto;
+        display: none;
+    /* grid-template-columns: 250px auto auto; */
     margin-top: 20px;
         
     }
@@ -2675,7 +2849,13 @@ a.logoms {
     }
 
 
-
+.h1a{
+    width: 90%;
+    
+}
+.h1a h1{
+    font-size: 3em;
+}
  
     h3.h3wbs {
     text-align: center;
@@ -2716,10 +2896,7 @@ a.logoms {
     }
 
 
-    .textdiv {
-        margin-top: 50px;
-    }  
-
+   
 
     .botimg {
         display: grid;
@@ -2760,7 +2937,7 @@ a.logoms {
 
 .content1 {
     display: grid;
-    grid-template-columns: 500px 50%;
+    grid-template-columns: 560px auto;
     align-items: center;
 }
 
@@ -2784,7 +2961,7 @@ a.logoms {
     .portadafull {
         display: grid;
         /* height: 100vh; */
-        background: linear-gradient(0deg, rgba(37,211,102,.6)0%, rgba(255,255,255,0.01) 65%);
+        /* background: linear-gradient(0deg, rgba(37,211,102,.6)0%, rgba(255,255,255,0.01) 65%); */
 }
    
       
@@ -2896,7 +3073,7 @@ a.logoms {
         }
 
      .ca2 p{
-         text-align: center;
+  
          max-width: 368px;
      }
 
@@ -2906,7 +3083,7 @@ a.logoms {
     grid-template-columns: 50% 50%;
     height: 80vh;
     align-content: center;
-    background-image: linear-gradient(to left, rgba(37, 211, 102, .8), rgba(255, 255, 255, 0)80%),url(img/whatsApp-business-masivo.png);
+    background-image: url(img/whatsApp-business-masivo.png);
     background-origin: content-box;
     background-position: top;
     background-size: cover;
@@ -2920,7 +3097,7 @@ a.logoms {
 }
 
         .que2p p {
-            color: white;
+            color:black;
             font-size: 1em;
 
         
