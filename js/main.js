@@ -8,6 +8,7 @@ $('.modalform').on('click', function(){
     $('form').addClass('wt');
     $('.cardnegocio').addClass('zin');
     $('.owl-carousel').addClass('zin');
+    $('.comunidad').addClass('zin');
 
  
   
@@ -20,6 +21,7 @@ $('.modalform').on('click', function(){
     $('form').toggleClass('wt');
     $('.cardnegocio').toggleClass('zin');
     $('.owl-carousel').toggleClass('zin');
+    $('.comunidad').addClass('zin');
 
 });
 
@@ -30,6 +32,7 @@ $('.izform2').on('click', function(){
     $('form').toggleClass('wt');
     $('.cardnegocio').toggleClass('zin');
     $('.owl-carousel').toggleClass('zin');
+    $('.comunidad').addClass('zin');
 
 });
 
