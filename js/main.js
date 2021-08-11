@@ -22,6 +22,7 @@ $('.modalform').on('click', function(){
     $('.cardnegocio').toggleClass('zin');
     $('.owl-carousel').toggleClass('zin');
     $('.comunidad').addClass('zin');
+    $('.wbsimg').addClass('zin');
 
 });
 
@@ -33,6 +34,7 @@ $('.izform2').on('click', function(){
     $('.cardnegocio').toggleClass('zin');
     $('.owl-carousel').toggleClass('zin');
     $('.comunidad').addClass('zin');
+    $('.wbsimg').addClass('zin');
 
 });
 
