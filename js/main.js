@@ -22,7 +22,7 @@ $('.modalform').on('click', function(){
     $('.cardnegocio').toggleClass('zin');
     $('.owl-carousel').toggleClass('zin');
     $('.comunidad').addClass('zin');
-    $('.iframeface').addClass('zin');
+    $('.fb-comments.fb_iframe_widget.fb_iframe_widget_fluid_desktop.fb_iframe_widget_fluid').addClass('zin');
 
 });
 
@@ -34,7 +34,8 @@ $('.izform2').on('click', function(){
     $('.cardnegocio').toggleClass('zin');
     $('.owl-carousel').toggleClass('zin');
     $('.comunidad').addClass('zin');
-    $('.iframeface').addClass('zin');
+    $('.fb-comments.fb_iframe_widget.fb_iframe_widget_fluid_desktop.fb_iframe_widget_fluid').addClass('zin')
+  
 
 });
 
