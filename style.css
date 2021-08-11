@@ -1398,6 +1398,9 @@ span.icon-flecha-izq.izform {
 .zin{
     z-index: -2 !important;
 }
+.zinf{
+display: none;
+}
 .wt{
     background: white;
     height: auto;

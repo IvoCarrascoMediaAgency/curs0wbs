@@ -21,8 +21,8 @@ $('.modalform').on('click', function(){
     $('form').toggleClass('wt');
     $('.cardnegocio').toggleClass('zin');
     $('.owl-carousel').toggleClass('zin');
-    $('.comunidad').addClass('zin');
-    $('.fb-comments.fb_iframe_widget.fb_iframe_widget_fluid_desktop.fb_iframe_widget_fluid').addClass('zin');
+    $('.comunidad').addClass('zinf');
+
 
 });
 
@@ -33,8 +33,8 @@ $('.izform2').on('click', function(){
     $('form').toggleClass('wt');
     $('.cardnegocio').toggleClass('zin');
     $('.owl-carousel').toggleClass('zin');
-    $('.comunidad').addClass('zin');
-    $('.fb-comments.fb_iframe_widget.fb_iframe_widget_fluid_desktop.fb_iframe_widget_fluid').addClass('zin')
+    $('.comunidad').addClass('zinf');
+   
   
 
 });
