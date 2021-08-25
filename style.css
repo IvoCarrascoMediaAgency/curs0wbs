@@ -1518,13 +1518,16 @@ display: none;
 
 .item img {
     border-radius: 20px;
-    max-width: 300px;
+   
+    margin-top: -20px;
+    overflow: hidden;
 }
 
 .item {
     width: 90%;
     margin: 0 auto;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .owl-carousel {
@@ -2631,6 +2634,9 @@ sub.smallwbs {
 
 @media screen and (min-width: 768px){
 
+    .item img {
+        max-width: 300px;
+    }
 
     form{
         height: auto;
